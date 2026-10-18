@@ -1,0 +1,91 @@
+# Interface d'édition du portfolio (Pages CMS : https://pagescms.org)
+# Elle permet de modifier les textes et les projets sans toucher au code.
+
+media:
+  input: assets/uploads
+  output: assets/uploads
+
+content:
+  - name: projets
+    label: Réalisations
+    type: file
+    path: content/projets.json
+    format: json
+    fields:
+      - name: projets
+        label: Projets
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: Titre, type: string, required: true }
+          - name: slug
+            label: Identifiant (dans l'adresse, sans espace ni accent, ex. maison-arlette)
+            type: string
+            required: true
+          - name: categorie
+            label: Catégorie
+            type: select
+            required: true
+            options:
+              values:
+                - { value: site, label: Site internet }
+                - { value: logo, label: Logo }
+                - { value: contenu, label: Création de contenu }
+          - { name: annee, label: Année, type: string }
+          - { name: client, label: Client, type: string }
+          - { name: role, label: Mon rôle, type: string }
+          - { name: resume, label: Résumé (une phrase), type: text }
+          - { name: contexte, label: Le contexte, type: text }
+          - { name: objectif, label: L'objectif, type: text }
+          - { name: realisation, label: Ce que j'ai fait, type: text }
+          - { name: resultat, label: Le résultat, type: text }
+          - { name: couverture, label: Image principale, type: image }
+          - name: galerie
+            label: Galerie d'images
+            type: image
+            options:
+              multiple: true
+          - { name: lien, label: Lien vers le projet en ligne (facultatif), type: string }
+          - { name: en_avant, label: Mettre en avant sur l'accueil, type: boolean }
+
+  - name: site
+    label: Mes infos et À propos
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: prenom, label: Prénom, type: string }
+      - { name: nom, label: Nom, type: string }
+      - { name: titre, label: Titre (sous le nom), type: string }
+      - { name: villes, label: Villes, type: string }
+      - { name: manifeste, label: "Manifeste (mettre *entre étoiles* les mots à passer en rose)", type: text }
+      - { name: accroche_apropos, label: Accroche À propos (page d'accueil), type: text }
+      - { name: bio, label: "Biographie (une ligne vide entre deux paragraphes)", type: text }
+      - { name: email, label: Email, type: string }
+      - { name: linkedin, label: Lien LinkedIn, type: string }
+      - { name: cv, label: Mon CV (PDF), type: file }
+      - name: competences
+        label: Compétences
+        type: object
+        list: true
+        fields:
+          - { name: groupe, label: Groupe, type: string }
+          - { name: items, label: Compétences, type: string, list: true }
+      - name: experiences
+        label: Expériences
+        type: object
+        list: true
+        fields:
+          - { name: dates, label: Dates, type: string }
+          - { name: poste, label: Poste, type: string }
+          - { name: structure, label: Entreprise, type: string }
+          - { name: description, label: Description, type: text }
+      - name: formation
+        label: Formation
+        type: object
+        list: true
+        fields:
+          - { name: dates, label: Dates, type: string }
+          - { name: diplome, label: Diplôme, type: string }
+          - { name: ecole, label: École, type: string }
+      - { name: outils, label: Outils, type: string, list: true }

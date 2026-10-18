@@ -1,0 +1,26 @@
+{
+  "prenom": "Léa",
+  "nom": "Javon",
+  "titre": "Web designer & marketing digital",
+  "villes": "Paris · La Rochelle",
+  "manifeste": "Je dessine des sites *beaux*, pensés au pixel près, et qui ramènent des *clients*.",
+  "accroche_apropos": "Entre le design et le marketing, je n'ai jamais voulu choisir. Je crée des sites et des identités qui plaisent au premier regard et qui travaillent pour leur marque, jour après jour.",
+  "email": "lea.javon.pro@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/leajavon",
+  "cv": "",
+  "bio": "Je m'appelle Léa, je termine mon mastère en marketing digital, en alternance. Mon terrain de jeu : la création de sites internet, de l'idée jusqu'à la mise en ligne.\n\nMon double profil est ma force : je pense chaque page comme une *designer* (l'émotion, le détail, la cohérence) et comme une *marketeuse* (le message, le parcours, la conversion).\n\nPerfectionniste assumée, je peux passer une heure sur un espacement. Le reste du temps, vous me trouverez à cheval, entre Paris et La Rochelle, une tasse de chocolat chaud à la main.",
+  "competences": [
+    { "groupe": "Design", "items": ["Web design", "UI / UX", "Identité visuelle", "Logo", "Direction artistique"] },
+    { "groupe": "Web", "items": ["WordPress", "Webflow", "HTML / CSS", "Responsive", "SEO"] },
+    { "groupe": "Marketing", "items": ["Stratégie digitale", "Création de contenu", "Réseaux sociaux", "Copywriting", "Analytics"] }
+  ],
+  "experiences": [
+    { "dates": "2025 — 2027", "poste": "Chargée de marketing digital (alternance)", "structure": "Nom de l'entreprise", "description": "Exemple à remplacer : refonte du site, création de contenus pour les réseaux sociaux, suivi des performances." },
+    { "dates": "2024", "poste": "Stage web design", "structure": "Nom de l'agence", "description": "Exemple à remplacer : maquettes de sites vitrines, création de logos et de chartes graphiques." }
+  ],
+  "formation": [
+    { "dates": "2025 — 2027", "diplome": "Mastère Marketing digital", "ecole": "Nom de l'école" },
+    { "dates": "2022 — 2025", "diplome": "Licence / Bachelor", "ecole": "Nom de l'école" }
+  ],
+  "outils": ["Figma", "WordPress", "Webflow", "Canva", "Photoshop", "Illustrator", "Google Analytics", "Notion"]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<rect width="1600" height="1200" fill="#F6D7C9"/>
+<g transform="translate(560 120)">
+  <rect width="480" height="960" rx="60" fill="#2B1B17"/><rect x="18" y="18" width="444" height="924" rx="46" fill="#fff"/>
+  <circle cx="80" cy="100" r="30" fill="#C2364B"/><text x="126" y="110" font-family="Arial, sans-serif" font-weight="bold" font-size="26" fill="#2B1B17">parisgourmand</text>
+  <rect x="30" y="170" width="136" height="136" fill="#C2364B"/><rect x="172" y="170" width="136" height="136" fill="#F2B880"/><rect x="314" y="170" width="136" height="136" fill="#2B1B17"/><rect x="30" y="312" width="136" height="136" fill="#F2B880"/><rect x="172" y="312" width="136" height="136" fill="#2B1B17"/><rect x="314" y="312" width="136" height="136" fill="#C2364B"/><rect x="30" y="454" width="136" height="136" fill="#2B1B17"/><rect x="172" y="454" width="136" height="136" fill="#C2364B"/><rect x="314" y="454" width="136" height="136" fill="#F2B880"/>
+</g>
+<text x="250" y="560" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="80" fill="#2B1B17" transform="rotate(-8 250 560)">été</text>
+</svg>

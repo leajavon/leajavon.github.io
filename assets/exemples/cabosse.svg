@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<rect width="1600" height="1200" fill="#5A3222"/>
+<circle cx="800" cy="520" r="230" fill="none" stroke="#F4E7DA" stroke-width="6"/>
+<circle cx="800" cy="520" r="200" fill="#8E5A3C"/>
+<text x="800" y="600" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="230" fill="#F4E7DA">C</text>
+<text x="800" y="880" text-anchor="middle" font-family="Georgia, serif" font-size="72" letter-spacing="18" fill="#F4E7DA">CABOSSE</text>
+</svg>

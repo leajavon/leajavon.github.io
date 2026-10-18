@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+<rect width="1600" height="1200" fill="#3E4A4F"/>
+<rect x="200" y="260" width="560" height="680" rx="12" fill="#EDEAE4"/>
+<rect x="840" y="260" width="560" height="320" rx="12" fill="#A9B8B5"/>
+<rect x="840" y="620" width="270" height="320" rx="12" fill="#EDEAE4" opacity=".5"/>
+<rect x="1130" y="620" width="270" height="320" rx="12" fill="#A9B8B5" opacity=".6"/>
+<text x="480" y="640" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="96" fill="#3E4A4F">Brume</text>
+</svg>

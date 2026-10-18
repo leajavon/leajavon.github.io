@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Léa Javon · Web designer &amp; marketing digital</title>
+<meta name="description" content="Portfolio de Léa Javon, web designer et marketing digital entre Paris et La Rochelle : sites internet, logos et création de contenu.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Léa Javon · Web designer &amp; marketing digital">
+<meta property="og:description" content="Portfolio de Léa Javon, web designer et marketing digital entre Paris et La Rochelle : sites internet, logos et création de contenu.">
+<meta name="theme-color" content="#24150F">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="accueil">
+<a class="skip" href="#main">Aller au contenu</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-name"><span><span>Léa</span></span><span><span><em>Javon</em></span></span></div>
+  <p class="loader-tag">Web designer &amp; marketing digital</p>
+  <div class="loader-count"><span id="count">0</span></div>
+</div>
+<div class="curtain" id="curtain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"><span></span></div></div>
+
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Léa Javon, accueil">Léa <em>Javon</em></a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="a-propos.html">À propos</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-sun" href="assets/cv/CV-Lea-Javon.pdf" data-cv download><span><span class="cv-long">Télécharger le </span>CV</span> <span aria-hidden="true">↓</span></a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav aria-label="Menu mobile">
+    <a class="big" href="index.html" style="--n:0">Accueil</a>
+    <a class="big" href="a-propos.html" style="--n:1">À propos</a>
+    <a class="big" href="realisations.html" style="--n:2">Réalisations</a>
+    <a class="big" href="#contact" style="--n:3"><em>Contact</em></a>
+  </nav>
+  <div class="menu-foot">
+    <a class="btn btn-sun" href="assets/cv/CV-Lea-Javon.pdf" data-cv download>Télécharger le CV ↓</a>
+    <a class="btn btn-line" href="https://www.linkedin.com/in/leajavon" data-linkedin target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero" aria-label="Présentation">
+    <h1 class="hero-name"><span class="line"><span>Léa</span></span><span class="line"><span>Javon</span></span></h1>
+    <figure class="portrait" data-cursor="Bonjour !"><img src="assets/img/photo-lea.jpg" alt="Portrait de Léa Javon" width="736" height="1113" fetchpriority="high"></figure>
+    <p class="hero-meta"><strong data-site="titre">Web designer &amp; marketing digital</strong><span data-site="villes">Paris · La Rochelle</span></p>
+    <p class="hero-scroll" aria-hidden="true">Défiler</p>
+    <div class="marquee" aria-hidden="true"><div><span>Web design ✦</span><span>Marketing digital ✦</span><span>Identité visuelle ✦</span><span>Création de contenu ✦</span><span>Web design ✦</span><span>Marketing digital ✦</span><span>Identité visuelle ✦</span><span>Création de contenu ✦</span></div></div>
+  </section>
+
+  <section class="statement">
+    <p class="eyebrow reveal">Manifeste</p>
+    <p class="statement-text" id="manifeste"></p>
+  </section>
+
+  <section class="section">
+    <div class="sec-head">
+      <h2 class="sec-title" data-split>Réalisations <em>choisies</em></h2>
+      <a class="btn btn-line reveal" href="realisations.html">Toutes les réalisations <span id="count-all"></span> →</a>
+    </div>
+    <ol class="work-list" id="featured"></ol>
+  </section>
+
+  <section class="section teaser">
+    <div>
+      <p class="eyebrow reveal">À propos</p>
+      <h2 class="sec-title" data-split>Créative <em>&amp;</em> stratège</h2>
+    </div>
+    <div>
+      <div class="lead reveal" id="teaser-text"></div>
+      <div class="chips reveal" id="teaser-skills"></div>
+      <a class="btn btn-rose reveal" href="a-propos.html">Découvrir mon parcours →</a>
+    </div>
+  </section>
+</main>
+<div class="float-img" aria-hidden="true"></div>
+
+<footer class="site-footer" id="contact">
+  <p class="eyebrow reveal">Contact</p>
+  <h2 class="footer-title" data-split>Travaillons <em>ensemble</em></h2>
+  <a class="footer-mail reveal" href="mailto:lea.javon.pro@gmail.com" data-mail data-mail-text data-cursor="Écrire">lea.javon.pro@gmail.com</a>
+  <div class="footer-links reveal">
+    <a class="btn btn-rose" href="https://www.linkedin.com/in/leajavon" data-linkedin target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn btn-line" href="assets/cv/CV-Lea-Javon.pdf" data-cv download>Télécharger le CV ↓</a>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span data-year>2026</span> Léa Javon</span>
+    <span>Conçu avec beaucoup de chocolat chaud</span>
+  </div>
+</footer>
+</body>
+</html>
