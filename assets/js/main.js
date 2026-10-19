@@ -497,7 +497,14 @@ function renderAbout(site) {
   const row = x => `<li class="reveal"><span class="dates">${esc(x.dates)}</span><div><h3>${esc(x.poste || x.diplome)}</h3><p class="where">${esc(x.structure || x.ecole)}</p>${x.description ? `<p>${esc(x.description)}</p>` : ''}</div></li>`;
   const xp = $('#xp'); if (xp) xp.innerHTML = (site.experiences || []).map(row).join('');
   const fo = $('#formation'); if (fo) fo.innerHTML = (site.formation || []).map(row).join('');
-  const tools = $('#outils'); if (tools) tools.innerHTML = (site.outils || []).map(s => `<span class="chip">${esc(s)}</span>`).join('');
+  const chips = (id, list) => { const el = $(id); if (el) el.innerHTML = (list || []).map(s => `<span class="chip">${esc(s)}</span>`).join(''); };
+  chips('#outils', site.outils);
+  chips('#interets', site.interets);
+  const certs = $('#certifications');
+  if (certs) {
+    certs.innerHTML = (site.certifications || []).map(c => `<li class="reveal"><span>${esc(c.annee)}</span>${esc(c.intitule)}</li>`).join('');
+    certs.previousElementSibling.hidden = !certs.children.length;
+  }
 }
 
 /* ---------- Démarrage ---------- */

@@ -88,4 +88,12 @@ content:
           - { name: dates, label: Dates, type: string }
           - { name: diplome, label: Diplôme, type: string }
           - { name: ecole, label: École, type: string }
+      - name: certifications
+        label: Certifications
+        type: object
+        list: true
+        fields:
+          - { name: annee, label: Année, type: string }
+          - { name: intitule, label: Intitulé, type: string }
       - { name: outils, label: Outils, type: string, list: true }
+      - { name: interets, label: Centres d'intérêt, type: string, list: true }
