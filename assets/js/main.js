@@ -58,7 +58,6 @@ function initStickers(stage, list) {
   list.forEach((s, i) => {
     const el = document.createElement('div');
     el.className = 'st' + (s.mHide ? ' m-hide' : '');
-    el.dataset.cursor = 'Attrape-moi';
     el.dataset.depth = s.d;
     el.style.cssText = `--x:${s.x}%;--y:${s.y}%;${s.mx != null ? `--mx:${s.mx}%;--my:${s.my}%;` : ''}--r:${s.r}deg;--delay:${(0.5 + i * 0.09).toFixed(2)}s;--w:${s.w === 'auto' ? 'auto' : s.w + 'px'}`;
     el.innerHTML = `<div class="st-par"><div class="st-body">${s.h}</div></div>`;

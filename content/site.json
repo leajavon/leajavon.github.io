@@ -3,33 +3,109 @@
   "nom": "Javon",
   "titre": "Web designer & marketing digital",
   "villes": "Paris · La Rochelle",
-  "manifeste": "Je dessine des sites *beaux*, pensés au pixel près, et qui ramènent des *clients*.",
-  "accroche_apropos": "Entre la création et le marketing, je n'ai jamais voulu choisir. Sites internet, réseaux sociaux, événements : je construis une communication qui plaît au premier regard et qui travaille pour sa marque, jour après jour.",
+  "manifeste": "Je crée des sites *esthétiques*, pensés au pixel près, qui ramènent des *clients*.",
+  "accroche_apropos": "Entre la création de sites et le marketing, je n'ai jamais voulu choisir. Sites internet, réseaux sociaux, événements : je construis une communication qui parle au premier regard et qui travaille pour la marque, jour après jour.",
   "email": "lea.javon.pro@gmail.com",
   "linkedin": "https://www.linkedin.com/in/leajavon",
   "cv": "",
-  "bio": "Je prépare un *master marketing digital* à l'ISME, en alternance comme assistante communication au sein du Groupe Aurora, sur l'île d'Oléron.\n\nDepuis mon BTS, j'ai enchaîné trois alternances : chez un constructeur nautique, dans une agence digitale, puis dans un groupe régional. J'y ai géré des réseaux sociaux, des newsletters, des salons et des projets clients, et surtout créé des *sites internet*, ce que je préfère par-dessus tout.\n\nPerfectionniste assumée, je peux passer une heure sur un espacement. Le reste du temps, vous me trouverez à cheval, sur l'eau ou un appareil photo à la main, avec une tasse de chocolat chaud jamais très loin.",
+  "bio": "Je prépare un *master marketing digital* à l'ISME de La Rochelle, en alternance comme assistante communication au sein du Groupe Aurora.\n\nDepuis mon BTS, j'ai fait trois alternances : chez un courtier maritime, dans une agence digitale, puis dans un groupe d'entreprises du bâtiment. J'y ai géré des réseaux sociaux, des newsletters, des salons et des projets clients, et surtout créé des *sites internet*, ce que je préfère.\n\nLe reste du temps, vous me trouverez à cheval, sur l'eau en bateau ou un appareil photo à la main, avec une tasse de chocolat chaud jamais très loin.",
   "competences": [
-    { "groupe": "Création", "items": ["Création de sites internet", "Création de logos", "Création de contenu", "Newsletters"] },
-    { "groupe": "Marketing", "items": ["Réseaux sociaux", "Référencement (SEO)", "Campagnes marketing", "Google Analytics", "Communication interne et externe"] },
-    { "groupe": "Gestion de projet", "items": ["Gestion de projets clients", "Organisation de salons et d'événements", "Relation fournisseurs"] }
+    { "groupe": "Création",
+      "items": [
+        "Création de sites internet",
+        "Création de logos",
+        "Création de contenu",
+        "Newsletters"
+      ]
+    },
+    { "groupe": "Marketing",
+      "items": [
+        "Réseaux sociaux",
+        "Référencement (SEO)",
+        "Campagnes marketing",
+        "Google Analytics",
+        "Communication interne et externe"
+      ]
+    },
+    { "groupe": "Gestion de projet",
+      "items": [
+        "Gestion de projets clients",
+        "Organisation de salons et d'événements",
+        "Relation fournisseurs"
+      ]
+    }
   ],
   "experiences": [
-    { "dates": "2025 — aujourd'hui", "poste": "Assistante communication", "structure": "Groupe Aurora · Saint-Pierre-d'Oléron", "description": "Gestion des réseaux sociaux et du référencement, campagnes marketing, organisation d'événements (salons, portes ouvertes) et gestion de projets avec les fournisseurs." },
-    { "dates": "2024 — 2025", "poste": "Cheffe de projet en alternance", "structure": "La Casquette Digitale · La Rochelle", "description": "Gestion des projets clients, développement de sites internet et de réseaux sociaux, communication de l'agence." },
-    { "dates": "2022 — 2024", "poste": "Chargée de communication en alternance", "structure": "JM Sea · La Rochelle", "description": "Création et développement des réseaux sociaux et des newsletters, communication interne et externe, gestion du site internet, réalisation des fiches techniques des navires." }
+    { "dates": "2025 — aujourd'hui",
+      "poste": "Assistante communication",
+      "structure": "Groupe Aurora · Saint-Pierre-d'Oléron",
+      "description": "Gestion des réseaux sociaux et du référencement, campagnes marketing, organisation d'événements (salons, portes ouvertes) et gestion de projets avec les fournisseurs."
+    },
+    { "dates": "2024 — 2025",
+      "poste": "Cheffe de projet en alternance",
+      "structure": "La Casquette Digitale · La Rochelle",
+      "description": "Gestion des projets clients, développement de sites internet et de réseaux sociaux, communication de l'agence."
+    },
+    { "dates": "2022 — 2024",
+      "poste": "Chargée de communication en alternance",
+      "structure": "JM Sea · La Rochelle",
+      "description": "Création et développement des réseaux sociaux et des newsletters, communication interne et externe, gestion du site internet, réalisation des fiches techniques des navires."
+    }
   ],
   "formation": [
-    { "dates": "2025 — 2027", "diplome": "Master Marketing digital", "ecole": "ISME · Périgny" },
-    { "dates": "2024 — 2025", "diplome": "Bachelor Communication et stratégies digitales", "ecole": "Excelia · La Rochelle" },
-    { "dates": "2022 — 2024", "diplome": "BTS Négociation et digitalisation de la relation client", "ecole": "ISFAC · La Rochelle" }
+    { "dates": "2025 — 2027",
+      "diplome": "Master Marketing digital",
+      "ecole": "ISME · Périgny"
+    },
+    { "dates": "2024 — 2025",
+      "diplome": "Bachelor Communication et stratégies digitales",
+      "ecole": "Excelia · La Rochelle"
+    },
+    { "dates": "2022 — 2024",
+      "diplome": "BTS Négociation et digitalisation de la relation client",
+      "ecole": "ISFAC · La Rochelle"
+    }
   ],
   "certifications": [
-    { "annee": "2025", "intitule": "AI4VALUE · Intelligence artificielle" },
-    { "annee": "2025", "intitule": "Numérique responsable" },
-    { "annee": "2023", "intitule": "La Fresque du climat" },
-    { "annee": "2023", "intitule": "Développer sa stratégie webmarketing" }
+    { "annee": "2025",
+      "intitule": "AI4VALUE · Intelligence artificielle"
+    },
+    { "annee": "2025",
+      "intitule": "Numérique responsable"
+    },
+    { "annee": "2023",
+      "intitule": "La Fresque du climat"
+    },
+    { "annee": "2023",
+      "intitule": "Développer sa stratégie webmarketing"
+    }
   ],
-  "outils": ["WordPress", "Elementor", "Webflow", "Shopify", "Prestashop", "Figma", "Photoshop", "Illustrator", "InDesign", "Premiere Pro", "CapCut", "Meta Business Suite", "Google Analytics", "Mailchimp", "Mailjet", "Brevo", "Trello", "Suite Office"],
-  "interets": ["Équitation", "Nautisme (permis côtier à 16 ans)", "Danse classique (12 ans)", "Photographie", "Histoire", "Voyages"]
+  "outils": [
+    "WordPress",
+    "Elementor",
+    "Webflow",
+    "Shopify",
+    "Prestashop",
+    "Figma",
+    "Photoshop",
+    "Illustrator",
+    "InDesign",
+    "Premiere Pro",
+    "CapCut",
+    "Meta Business Suite",
+    "Google Analytics",
+    "Mailchimp",
+    "Mailjet",
+    "Brevo",
+    "Trello",
+    "Suite Office"
+  ],
+  "interets": [
+    "Équitation",
+    "Nautisme (permis côtier à 16 ans)",
+    "Danse classique (12 ans)",
+    "Photographie",
+    "Histoire",
+    "Voyages"
+  ]
 }
