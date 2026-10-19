@@ -50,7 +50,7 @@ const HERO_STICKERS = [
   { h: SVG.cursor(C.sun, C.bg), x: 87, y: 38, mx: 77, my: 66, w: 92, r: 8, d: 16 },
   { h: pill('chocolat chaud &gt; café', C.ink, C.bg), x: 57, y: 35, mx: 2, my: 40, w: 'auto', r: 6, d: 34 },
   { h: pill('Paris ↔ La Rochelle', C.rose, C.bg), x: 21, y: 47, w: 'auto', r: -6, d: 12, mHide: true },
-  { h: pill('pixel perfect', C.sun, C.bg, 14), x: 57, y: 79, mx: 52, my: 75, w: 'auto', r: -3, d: 28 },
+  { h: pill('pixel perfect', C.sun, C.bg, 14), x: 58, y: 67, mx: 52, my: 75, w: 'auto', r: -3, d: 28 },
 ];
 
 function initStickers(stage, list) {
@@ -79,27 +79,6 @@ function initStickers(stage, list) {
     stage.addEventListener('pointerleave', () => $$('.st-par', stage).forEach(p => (p.style.transform = '')));
   }
 }
-
-// Glisser-déposer des stickers (souris et doigt)
-document.addEventListener('pointerdown', e => {
-  const st = e.target.closest('.st');
-  if (!st || e.button > 0) return;
-  e.preventDefault();
-  const [tx, ty] = (st.style.translate || '0px 0px').split(' ').map(parseFloat);
-  const sx = e.clientX - (tx || 0), sy = e.clientY - (ty || 0);
-  st.classList.add('dragging');
-  st.setPointerCapture(e.pointerId);
-  const move = ev => (st.style.translate = `${ev.clientX - sx}px ${ev.clientY - sy}px`);
-  const up = () => {
-    st.classList.remove('dragging');
-    st.removeEventListener('pointermove', move);
-    st.removeEventListener('pointerup', up);
-    st.removeEventListener('pointercancel', up);
-  };
-  st.addEventListener('pointermove', move);
-  st.addEventListener('pointerup', up);
-  st.addEventListener('pointercancel', up);
-});
 
 /* ---------- Défilement fluide ---------- */
 let lenis = null;
