@@ -50,7 +50,7 @@ const HERO_STICKERS = [
   { h: SVG.cursor(C.sun, C.bg), x: 87, y: 38, mx: 77, my: 66, w: 92, r: 8, d: 16 },
   { h: pill('chocolat chaud &gt; café', C.ink, C.bg), x: 57, y: 35, mx: 2, my: 40, w: 'auto', r: 6, d: 34 },
   { h: pill('Paris ↔ La Rochelle', C.rose, C.bg), x: 21, y: 47, w: 'auto', r: -6, d: 12, mHide: true },
-  { h: pill('pixel perfect', C.sun, C.bg, 14), x: 58, y: 67, mx: 52, my: 75, w: 'auto', r: -3, d: 28 },
+  { h: pill('pixel perfect', C.sun, C.bg, 14), x: 57, y: 79, mx: 52, my: 75, w: 'auto', r: -3, d: 28 },
 ];
 
 function initStickers(stage, list) {
