@@ -20,6 +20,20 @@
         "assets/uploads/mockup carte de visite.png"
       ],
       "en_avant": true
+    },
+    {
+      "titre": "Réservation VTC Yvelines : Site web",
+      "slug": "reservation-vtc-yvelines-site-web",
+      "categorie": "site",
+      "annee": "2026",
+      "client": "Réservation VTC Yvelines, David Javon, chauffeur privé VTC dans les Yvelines (78)",
+      "role": "Conception & développement web, UX/UI, intégration et SEO",
+      "resume": "Conception d’un site vitrine premium et d’un système de réservation en ligne sur mesure pour un chauffeur privé, pensés pour convertir et gérés sans aucune compétence technique.",
+      "contexte": "Le chauffeur disposait d’un ancien site construit avec un constructeur de pages (Elementor), lent, difficile à faire évoluer et peu qualitatif. Les demandes de course arrivaient de façon dispersée, sans parcours de réservation clair. Il fallait une présence en ligne à la hauteur d’un service haut de gamme, tout en restant simple à utiliser pour un indépendant non technicien.",
+      "objectif": "Créer un site rapide, élégant et optimisé pour le référencement local, doté d’un tunnel de réservation fluide ; permettre à David de recevoir et gérer ses demandes sans jamais se connecter à l’administration, et poser des bases saines pour le SEO dans toutes les communes desservies.",
+      "realisation": "Prototype validé puis développement d’un thème WordPress 100 % sur mesure (codé à la main), en remplacement d’Elementor, pour un site rapide et fidèle à la charte.\nPages clés : accueil, services détaillés, histoire, contact, actualité (vrai blog éditable), mentions légales / confidentialité / CGV, page 404.\nTunnel de réservation en ligne (parcours en étapes) : le client décrit sa course, la demande est enregistrée et transmise à David.\nGestion par e-mail sans back-office : David reçoit chaque demande avec des boutons Valider / Modifier / Refuser ; le client est automatiquement notifié de la réponse.\nSEO local : ~30 pages « ville » (Versailles, Saint-Germain-en-Laye, Poissy, Mantes-la-Jolie et communes du Mantois), données structurées, métadonnées et sitemap.\nFiabilisation des e-mails via un service d’envoi professionnel (authentification du domaine, délivrabilité).\nMise en production sur l’hébergement (environnement de préproduction puis bascule) et sécurisation du site.",
+      "resultat": "Un site nettement plus rapide et plus qualitatif que l’ancien, aligné sur l’image premium de la marque.\nUn parcours de réservation clair qui transforme les visiteurs en demandes de course.\nUne gestion autonome et sans friction pour le chauffeur (tout se fait par e-mail, zéro administration à apprendre).\nUne base SEO solide couvrant de nombreuses communes des Yvelines, prête à gagner en visibilité locale.\nUn site en ligne, fonctionnel et évolutif, prêt à accueillir de nouvelles fonctionnalités (paiement, agenda…) le moment venu.",
+      "en_avant": false
     }
   ]
 }
