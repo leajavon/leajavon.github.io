@@ -20,7 +20,11 @@ const FILTERS = [['tout', 'Tout'], ['logo', 'Logos'], ['site', 'Sites internet']
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 // *mot* devient <em>mot</em> (mis en rose)
 const rich = s => esc(s).replace(/\*(.+?)\*/g, '<em>$1</em>');
-const paras = s => String(s ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean).map(p => `<p>${rich(p)}</p>`).join('');
+// Une ligne vide sépare deux paragraphes ; plusieurs lignes à la suite deviennent une liste à puces
+const paras = s => String(s ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean).map(p => {
+  const lines = p.split('\n').map(l => l.replace(/^[-•]\s*/, '').trim()).filter(Boolean);
+  return lines.length > 1 ? `<ul>${lines.map(l => `<li>${rich(l)}</li>`).join('')}</ul>` : `<p>${rich(p)}</p>`;
+}).join('');
 const pad2 = n => String(n).padStart(2, '0');
 
 async function getJSON(path) {
@@ -393,21 +397,6 @@ function renderWorks(site, projets) {
     history.replaceState(null, '', u);
     lenis?.resize?.();
   });
-
-  // Légère inclinaison 3D des cartes au survol
-  if (fine && !reduce) {
-    grid.addEventListener('pointermove', e => {
-      const m = e.target.closest('.card-media');
-      if (!m) return;
-      const b = m.getBoundingClientRect();
-      const nx = (e.clientX - b.left) / b.width - .5, ny = (e.clientY - b.top) / b.height - .5;
-      m.style.transform = `rotateY(${nx * 8}deg) rotateX(${-ny * 8}deg)`;
-    });
-    grid.addEventListener('pointerout', e => {
-      const m = e.target.closest('.card-media');
-      if (m && !m.contains(e.relatedTarget)) m.style.transform = '';
-    });
-  }
 }
 
 /* ========== Page projet ========== */
@@ -442,19 +431,6 @@ function renderProject(site, projets) {
     </section>
     ${(p.galerie || []).length ? `<section class="p-gallery">${p.galerie.map(src => `<figure class="reveal">${media(src, p.titre)}</figure>`).join('')}</section>` : ''}
     ${next && next !== p ? `<a class="p-next" href="projet.html?p=${encodeURIComponent(next.slug)}" data-cursor="Suivant"><p class="eyebrow">Projet suivant</p><span class="display">${esc(next.titre)}</span></a>` : ''}`;
-
-  // Parallaxe douce sur l'image principale
-  const img = $('.p-cover img');
-  if (img && !reduce) {
-    const fig = img.parentElement;
-    const upd = () => {
-      const r = fig.getBoundingClientRect();
-      const p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
-      img.style.transform = `translateY(${-8 + p * -10}%)`;
-    };
-    addEventListener('scroll', upd, { passive: true });
-    upd();
-  }
 }
 
 /* ========== À propos ========== */
