@@ -36,7 +36,26 @@
         "assets/uploads/mckup site internet 1.jpg",
         "assets/uploads/Nouveau site.jpg"
       ],
-      "en_avant": false
+      "en_avant": true
+    },
+    {
+      "titre": "Noxa Studio : Site vitrine & référencement local d’une agence web",
+      "slug": "noxa-studio-site-agence",
+      "categorie": "site",
+      "annee": "2026",
+      "client": "Noxa Studio",
+      "role": "Réalisation complète : stratégie, direction artistique, intégration no-code (Elementor), rédaction des contenus, SEO et mise en ligne.",
+      "resume": "Conception et mise en ligne d’un site vitrine premium et éditable, doublé d’une stratégie de référencement local couvrant toute l’agglomération rochelaise.",
+      "contexte": "La première version du site internet était entièrement codée, nous avons fait le choix de faire une refonte du en no-code (Elementor) pour pouvoir le faire évoluer et le déléguer à de futurs collaborateurs, sans dépendre du code. Le tout en gardant une identité premium (noir / beige / orange, typographies Rubik & Nunito).",
+      "objectif": "Un site professionnel, rapide et autonome, qui inspire confiance aux artisans, TPE et indépendants, convertit les visiteurs en demandes de devis, et remonte sur Google sur les recherches locales de La Rochelle et ses communes.",
+      "realisation": "Design et intégration de l’ensemble du site sous Elementor (header sticky, animations, bandes alternées, 100 % responsive)\nRédaction de tous les contenus (pages services, histoire de marque, FAQ…) sans jargon\nArchitecture SEO locale : 48 pages par ville (création de site + référencement) avec contenu unique, maillage interne et pages services dédiées\nConformité RGPD (bandeau de consentement, pages légales) et intégration Google Analytics\nFormulaire de contact + prise de rendez-vous, blog, optimisation Yoast\nMise en ligne, soumission du sitemap et configuration de Google Search Console",
+      "resultat": "Un site complet de 50+ pages, en ligne et indexable, entièrement autonome (modifiable sans code), avec une base de référencement local solide prête à capter la clientèle de toute l’agglomération rochelaise.",
+      "couverture": "assets/uploads/Ordinateur portable dans un espace chaleureux-1.png",
+      "galerie": [
+        "assets/uploads/mockup ordi noxa.jpg"
+      ],
+      "lien": "https://noxastudio.fr/",
+      "en_avant": true
     }
   ]
 }
